@@ -1,0 +1,14 @@
+<nav class="navbar-wrapper">
+    <div class="navbar-inner-wrapper">
+        <div class="navbar-header">
+            Pramit Singhi
+        </div>
+        <div class="navbar">
+            {% for item in site.data.nav %}
+                <div {% if page.url == item.link %}class="navbar-item active"{% endif %} class="navbar-item">
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</nav>

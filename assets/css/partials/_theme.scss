@@ -1,0 +1,35 @@
+html {
+	font-size: $root-font-size;
+}
+
+@media #{$bp-sm} {
+	html {
+		font-size: $root-font-size-responsive;
+	}
+}
+
+@media #{$bp-md} {
+	html {
+		font-size: $root-font-size-large;
+	}
+}
+
+	body {
+		margin: 0 auto;
+		width: 100%;
+		position: relative;
+	}
+
+	h1 {
+		color: $black;
+	}
+
+	button {
+		padding: 1.5rem 4.5rem;
+		border: 0.1rem solid $black;
+		cursor: pointer;
+	}
+
+	.icon {
+		cursor: pointer;
+	}

@@ -1,0 +1,15 @@
+- color: '#0073b1'
+  icon: 'linkedin'
+  link: https://google.com
+- color: '#24292e' 
+  icon: 'github-square'
+  link: https://google.com
+- color: '#ea4c89'
+  icon: 'dribbble-square'
+  link: https://google.com
+- color: '#000000'
+  icon: 'medium'
+  link: https://google.com
+- color: '#0057ff'
+  icon: 'behance-square'
+  link: https://google.com

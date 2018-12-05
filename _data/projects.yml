@@ -1,0 +1,24 @@
+- title: cerebro
+  desc: Machine learning competition hosting website created for the college students.
+  role: Product Designer
+  case: https://google.com
+  shots: https://google.com
+  color: '#000000'
+- title: pontoon
+  desc: Mozilla's localization system.
+  role: UX Designer and Frontend Developer
+  case: https://google.com
+  shots: https://google.com
+  color: '#7BC876'
+- title: zestMoney
+  desc: FinTech startup based in Bangalore, India. Working to provide easy loans without hassle.
+  role: UI/UX Designer
+  case: https://google.com
+  shots: https://google.com
+  color: '#6C4AA0'
+- title: enroute
+  desc: 2D game designed over in a gaming hackathon.
+  role: Product Designer
+  case: https://google.com
+  shots: https://google.com
+  color: '#F4EE42'

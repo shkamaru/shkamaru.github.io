@@ -1,0 +1,33 @@
+<div class="projects-wrapper">
+    {% for project in site.data.projects %}
+        <div class="project">
+            <div class="project-image-wrapper">
+                <img class="project-image" src="/assets/images/{{ project.title }}.png" alt="{{ project.title }}" />
+            </div>
+            <div class="project-info-wrapper">
+                <div class="project-info-inner">    
+                    <div style="background-color:{{ project.color }}" class="project-info-line"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">
+                            {{ project.title }}
+                        </h3>
+                        <p class="project-desc">
+                            {{ project.desc }}
+                        </p>
+                    </div>
+                </div>
+                <div class="project-role">
+                    {{ project.role }}
+                </div>
+                <div class="project-cta">
+                    <a href="{{ project.case }}" target="_blank" class="project-cta-link">
+                        Case Study
+                    </a>
+                    <a href="{{ project.shots }}" target="_blank" class="project-cta-link">
+                        Design Shots
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
