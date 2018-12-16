@@ -1,18 +1,20 @@
-<footer class="footer">
-    <div class="footer-title">
-        <h3 class="contact-head">
-            Let's connect.
-        </h3>
-    </div>
-    <div class="footer-body">
-        <ul class="contact-cta">
-            {% for item in site.data.contact %}
-                <li class="contact-cta-item">
-                    <a class="contact-cta-item-link" href="{{ item.link }}" target="_blank">
-                        <i style="color:{{ item.color }}" class="fab fa-{{ item.icon }}"></i
-                    ></a>
-                </li>
-            {% endfor %}
-        </ul>
+<footer class="footer-wrapper">
+    <div class="footer">
+        <div class="footer-title">
+            <h3 class="contact-head">
+                Let's connect.
+            </h3>
+        </div>
+        <div class="footer-body">
+            <ul class="contact-cta">
+                {% for item in site.data.contact %}
+                    <li class="contact-cta-item">
+                        <a class="contact-cta-item-link" href="{{ item.link }}" target="_blank">
+                            <i style="color:{{ item.color }}" class="fab fa-{{ item.icon }}"></i
+                        ></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </footer>
