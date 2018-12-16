@@ -18,7 +18,7 @@
         .navbar-header {
             @include font-size(1.6, 1.25);
             font-family: $heading-font-family;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .navbar {
@@ -180,6 +180,8 @@
 .contact-wrapper {
     margin-top: 8rem;
     position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
     .contact-info p {

@@ -27,7 +27,13 @@ html {
 	button {
 		padding: 1.5rem 4.5rem;
 		border: 0.1rem solid $black;
+		border-radius: 0.5rem;
 		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: $black;
+		color: $white;
 	}
 
 	.icon {
