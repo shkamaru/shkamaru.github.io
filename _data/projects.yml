@@ -4,7 +4,7 @@
   case: https://uxplanet.org/e-rick-design-sprint-at-iit-roorkee-e8ea60685555
   shots: https://dribbble.com/shots/5742387-E-Rick
   color: '#FEB100'
--title: cerebro
+- title: cerebro
   desc: Machine learning competition hosting website created for the college students.
   role: Product Designer
   case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
