@@ -36,8 +36,8 @@
 
             .navbar-item.active {
                 font-weight: 800;
-                text-decoration:underline;
-                text-decoration-color: $black;
+                border-bottom: 0.2rem solid $black;
+                padding-bottom: 0.3rem;
             }
 
 
