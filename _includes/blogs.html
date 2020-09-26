@@ -1,0 +1,29 @@
+<div class="blogs-wrapper" id="blogs">
+    {% for blog in site.data.blogs %}
+        <div class="blog">
+            <div class="blog-image-wrapper">
+                <img class="blog-image" src="/assets/images/{{ blog.title }}.png" alt="{{ blog.title }}" />
+            </div>
+            <div class="blog-info-wrapper">
+                <div class="blog-info-inner">    
+                    <div class="blog-info">
+                        <h3 class="blog-title">
+                            {{ blog.text }}
+                        </h3>
+                        <p class="blog-desc">
+                            {{ blog.desc }}
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-role">
+                    {{ blog.role }}
+                </div>
+                <div class="blog-cta">
+                    <a href="{{ blog.case }}" target="_blank" class="blog-cta-link">
+                        Case Study
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
