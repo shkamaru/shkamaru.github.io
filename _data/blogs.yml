@@ -1,0 +1,30 @@
+- title: e-rick
+  text: Solving problem of e-rickshaws in IIT Roorkee
+  desc: A 2-day design sprint case study on the problem associated with e-rickshaws in IIT Roorkee.
+  role: Product Designer
+  time: 9 min
+  case: https://uxplanet.org/e-rick-design-sprint-at-iit-roorkee-e8ea60685555
+- title: cerebro
+  text: Creating an ML competition hosting website for students
+  desc: Machine learning competition hosting website created for the college students.
+  role: Product Designer
+  time: 9 min
+  case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
+- title: pontoon
+  text: Contributing to Mozilla during GSoC
+  desc: Mozilla's localization system.
+  role: UX Designer and Frontend Developer
+  time: 7 min
+  case: https://blog.prototypr.io/google-summer-of-code-18-with-mozilla-pontoon-89a7cb97af39
+- title: zestMoney
+  text: First internship, working on user flow in a FinTech
+  desc: FinTech startup based in Bangalore, India. Working to provide easy loans without hassle.
+  role: UI/UX Designer
+  time: 5 min
+  case: https://medium.com/@singhi.pramit/https-medium-com-singhi-pramit-internship-zestmoney-501f6a2b7a80
+- title: enroute
+  text: Creating/ Designing 2D games
+  desc: 2D game designed over in a gaming hackathon.
+  role: Product Designer
+  time: 6 min
+  case: https://medium.com/sdslabs/2-d-game-design-process-for-beginners-57c92237c0a5
