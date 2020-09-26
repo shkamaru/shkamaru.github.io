@@ -1,6 +1,6 @@
-- name: Work
+- name: Projects
   link: /
 - name: Blogs
   link: /blogs.html  
-- name: Contact Me
+- name: Contact
   link: /contact.html
