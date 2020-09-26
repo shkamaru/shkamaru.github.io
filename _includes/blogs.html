@@ -1,9 +1,6 @@
 <div class="blogs-wrapper" id="blogs">
     {% for blog in site.data.blogs %}
         <div class="blog">
-            <div class="blog-image-wrapper">
-                <img class="blog-image" src="/assets/images/{{ blog.title }}.png" alt="{{ blog.title }}" />
-            </div>
             <div class="blog-info-wrapper">
                 <div class="blog-info-inner">    
                     <div class="blog-info">
@@ -23,6 +20,9 @@
                         Case Study
                     </a>
                 </div>
+            </div>
+            <div class="blog-image-wrapper">
+                <img class="blog-image" src="/assets/images/{{ blog.title }}.png" alt="{{ blog.title }}" />
             </div>
         </div>
     {% endfor %}
