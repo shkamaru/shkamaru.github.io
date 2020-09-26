@@ -23,10 +23,11 @@
 
         .navbar {
             display: flex;
+            font-family: $heading-font-family;
+            font-weight: 400;
         }
 
             .navbar-item {
-                @include font-size(1.6, 1.25);
                 margin: 0 2.4rem;
             }
 
@@ -35,7 +36,7 @@
             }
 
             .navbar-item.active {
-                font-weight: 800;
+                font-weight: 600;
                 border-bottom: 0.2rem solid $black;
                 padding-bottom: 0.3rem;
             }
