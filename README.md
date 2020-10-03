@@ -9,7 +9,7 @@ This website aims to be a collection of all my learning in the world of product,
 5. **Purchase** include artwork available for purchase on Gumroad _(To be built)_
 
 ### Site Specs
-This is made using Jekyll. It is a simple, blog-aware, static site generator for personal, project, or organization sites written in Ruby. It takes text written in markup language and uses layouts to create a static website.
+This is made using Jekyll. It is a simple, blog-aware, static site generator for personal, project, or organization sites written in Ruby. It takes text written in markup language and uses layouts to create a static website. Liquid is the templating language to process pages on the site. Liquid can output and modify variables, have logic statements inside the pages and loop over content.
 
 Running currently on `Jekyll Version - 4.1.1`
 
