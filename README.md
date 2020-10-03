@@ -6,6 +6,7 @@ This website aims to be a collection of all my learning in the world of product,
 2. **Portfolio** of products I built since beginning of my career
 3. **Information** about me around work, books etc
 4. **Books** I read and my insights out of it _(To be built)_
+5. **Purchase** include artwork available for purchase on Gumroad _(To be built)_
 
 ### Site Specs
 This is made using Jekyll. It is a simple, blog-aware, static site generator for personal, project, or organization sites written in Ruby. It takes text written in markup language and uses layouts to create a static website.
