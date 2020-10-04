@@ -224,8 +224,10 @@
 
  
 .about-image-wrapper {
-    max-width: 100%;
+    width: 100vw;
+    height: 55vh;
     margin: 6rem auto 0 auto;
+    object-fit: cover;
 }
 
 .about-wrapper {
