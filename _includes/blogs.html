@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="blog-detail">
-                    <span>🗓 Published on {{blog.date}} ({{ blog.time }} read)</span>
+                    <span> {{blog.date | prepend: '🗓 Published on '}} {{ blog.time | append: ' read)' | prepend: '('}}</span>
                     <span>{{ blog.role }}</span>
                 </div>
                 <hr>
