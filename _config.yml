@@ -16,9 +16,9 @@
 title: Pramit Singhi
 email: singhi.pramit@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio of Pramit Singhi, a product designer and developer. 
-  Head of design at SDSLabs. Previously worked with Mozilla and Zest Money.
-  Final year undergraduate student at IIT Roorkee.
+  Personal Website of Pramit Singhi, a product manager and product blogger. 
+  At the moment, mangaing products at Zoomcar. Previously worked with Mozilla and Zest Money.
+  Alumni of IIT Roorkee, batch of 2019.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pramitsinghi.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  shkamaru
