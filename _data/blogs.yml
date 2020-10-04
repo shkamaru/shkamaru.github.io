@@ -1,6 +1,6 @@
 - title: e-rick
-  text: 🚕 Solving problem of e-rickshaws in IIT Roorkee
-  desc: A 2-day design sprint case study on the problem associated with e-rickshaws in IIT Roorkee.
+  text: 🚕 Solving trouble of e-rickshaws in IIT Roorkee
+  desc: As the only public transport option in campus, lot of problems occur ranging from availability to pricing. This is a 2-day design sprint case study on the solutions around better e-rickshaws manangement in IIT Roorkee
   role: 🎩 Product Designer
   time: 9 min
   date: Dec 17, 2018
@@ -8,31 +8,31 @@
   show: true
 - title: cerebro
   text: 🧠 Creating ML competition website for students
-  desc: Machine learning competition hosting website created for the college students.
+  desc: With the rise of Data Science as a career option, we created Machine Learning competition website for the students to help them practice and improve their skills, maintained by SDS (IIT Roorkee)
   role: 🎩 Product Designer
   time: 9 min
   date: Nov 29, 2018
   case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
   show: true
 - title: pontoon
-  text: 🤘🏻 Contributing to Mozilla during GSoC 2018
-  desc: Mozilla's localization system.
+  text: 🤘🏻 Contributing to Mozilla during Google Summer of Code 2018
+  desc: Working with Mozilla's localization l10n team on their tool Pontoon to increase the conversion rate of users to contributors by improving Home Page design
   role: 🎩 UX Designer and Frontend Developer
   time: 7 min
   date: Aug 13, 2018
   case: https://blog.prototypr.io/google-summer-of-code-18-with-mozilla-pontoon-89a7cb97af39
   show: true
 - title: zestMoney
-  text: ✍🏻 First internship, working on user flow in a FinTech
-  desc: FinTech startup based in Bangalore, India. Working to provide easy loans without hassle.
+  text: ✍🏻 First internship, working on a FinTech product
+  desc: Zestmoney one of the earliest companies in Fin-tech working to provide microloans. I worked around the UX improvement and designed user flow mails to get transparency around the process in getting a loan
   role: 🎩 UI/UX Designer
   time: 5 min
   date: Nov 23, 2018
   case: https://medium.com/@singhi.pramit/https-medium-com-singhi-pramit-internship-zestmoney-501f6a2b7a80
   show: true
 - title: enroute
-  text: 🕹 Creating/ Designing 2D games
-  desc: 2D game designed over in a gaming hackathon.
+  text: 🕹 Creating/ Designing 2D games for beginners
+  desc: A 1-day gaming hackathon with problem to create games using Canvas in HTML, maintained by SDS (IIT Roorkee)
   role: 🎩 Product Designer
   time: 6 min
   date: Jun 14, 2017
