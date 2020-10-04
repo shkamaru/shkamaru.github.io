@@ -5,6 +5,7 @@
   time: 9 min
   date: Dec 17, 2018
   case: https://uxplanet.org/e-rick-design-sprint-at-iit-roorkee-e8ea60685555
+  show: true
 - title: cerebro
   text: 🧠 Creating ML competition website for students
   desc: Machine learning competition hosting website created for the college students.
@@ -12,6 +13,7 @@
   time: 9 min
   date: Nov 29, 2018
   case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
+  show: true
 - title: pontoon
   text: 🤘🏻 Contributing to Mozilla during GSoC 2018
   desc: Mozilla's localization system.
@@ -19,6 +21,7 @@
   time: 7 min
   date: Aug 13, 2018
   case: https://blog.prototypr.io/google-summer-of-code-18-with-mozilla-pontoon-89a7cb97af39
+  show: true
 - title: zestMoney
   text: ✍🏻 First internship, working on user flow in a FinTech
   desc: FinTech startup based in Bangalore, India. Working to provide easy loans without hassle.
@@ -26,6 +29,7 @@
   time: 5 min
   date: Nov 23, 2018
   case: https://medium.com/@singhi.pramit/https-medium-com-singhi-pramit-internship-zestmoney-501f6a2b7a80
+  show: true
 - title: enroute
   text: 🕹 Creating/ Designing 2D games
   desc: 2D game designed over in a gaming hackathon.
@@ -33,3 +37,4 @@
   time: 6 min
   date: Jun 14, 2017
   case: https://medium.com/sdslabs/2-d-game-design-process-for-beginners-57c92237c0a5
+  show: true
