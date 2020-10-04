@@ -1,27 +1,29 @@
 <div class="blogs-wrapper" id="blogs">
     {% for blog in site.data.blogs %}
-        <div class="blog">
-            <div class="blog-info-wrapper">
-                <div class="blog-info-inner">    
-                    <div class="blog-info">
-                        <div class="blog-cta">
-                            <a href="{{ blog.case }}" target="_blank">
-                                <h4 class="blog-title">
-                                    {{ blog.text }}
-                                </h4>
-                            </a>
+        {% if blog.show == true %}
+            <div class="blog">
+                <div class="blog-info-wrapper">
+                    <div class="blog-info-inner">    
+                        <div class="blog-info">
+                            <div class="blog-cta">
+                                <a href="{{ blog.case }}" target="_blank">
+                                    <h4 class="blog-title">
+                                        {{ blog.text }}
+                                    </h4>
+                                </a>
+                            </div>
+                            <p class="blog-desc">
+                                {{ blog.desc }}
+                            </p>
                         </div>
-                        <p class="blog-desc">
-                            {{ blog.desc }}
-                        </p>
                     </div>
+                    <div class="blog-detail">
+                        <span> {{blog.date | prepend: '🗓 Published on '}} {{ blog.time | append: ' read)' | prepend: '('}}</span>
+                        <span>{{ blog.role }}</span>
+                    </div>
+                    <hr>
                 </div>
-                <div class="blog-detail">
-                    <span> {{blog.date | prepend: '🗓 Published on '}} {{ blog.time | append: ' read)' | prepend: '('}}</span>
-                    <span>{{ blog.role }}</span>
-                </div>
-                <hr>
             </div>
-        </div>
+        {% endif %}
     {% endfor %}
 </div>
