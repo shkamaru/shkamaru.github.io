@@ -4,27 +4,32 @@
   case: https://uxplanet.org/e-rick-design-sprint-at-iit-roorkee-e8ea60685555
   shots: https://dribbble.com/shots/5742387-E-Rick
   color: '#FEB100'
+  show: true
 - title: cerebro
   desc: Machine learning competition hosting website created for the college students
   role: Product Designer
   case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
   shots: https://dribbble.com/shots/5629392-Cerebro-Illustrations
   color: '#000000'
+  show: true
 - title: pontoon
   desc: Mozilla's localization system
   role: UX Designer and Frontend Developer
   case: https://blog.prototypr.io/google-summer-of-code-18-with-mozilla-pontoon-89a7cb97af39
   shots: https://dribbble.com/shots/5598634-Pontoon-Landing-Page-Redesign
   color: '#7BC876'
+  show: true
 - title: zestMoney
   desc: FinTech startup based in Bangalore, India. Working to provide easy loans without hassle
   role: UI/UX Designer
   case: https://medium.com/@singhi.pramit/https-medium-com-singhi-pramit-internship-zestmoney-501f6a2b7a80
   shots: https://dribbble.com/shots/5589882-Internship-Zest-Information-Hierarchy
   color: '#6C4AA0'
+  show: true
 - title: enroute
   desc: 2D game designed over in a gaming hackathon
   role: Product Designer
   case: https://medium.com/sdslabs/2-d-game-design-process-for-beginners-57c92237c0a5
   shots: https://dribbble.com/shots/5578969-Enroute-game-Main-Screen
   color: '#F4EE42'
+  show: true
