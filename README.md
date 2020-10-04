@@ -25,7 +25,7 @@ This website aims to be a collection of all my learning in the world of product,
 
 | Components  | Files                                                                                                              |
 | ----------- |:-------------------------------------------------------------------------------------------------------------------|
-| _data       | `about.html`, `blogs.html`, `contact.yml`, `nav.yml`, `projects.yml`                                               |
+| _data       | `about.yml`, `blogs.yml`, `contact.yml`, `nav.yml`, `projects.yml`                                               |
 | _includes   | `about.html`, `blogs.html`, `footer.html`, `head.html`, `header.html`, `nav.html`, `projects.html`, `scripts.html` |
 | _layouts    | `blogs.html`, `contact.html`, `default.html`                                                                       |
 
