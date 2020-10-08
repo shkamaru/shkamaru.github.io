@@ -1,0 +1,22 @@
+<div id="about">
+    <img class="about-image-wrapper" src="/assets/images/cover.png" />
+</div>
+<div class="about-wrapper" id="about">
+    {% for item in site.data.about%}
+        {% if item.show == true %}
+            <div class="item">
+                <div>                
+                    <div class="item-info">
+                        <h4>{{ item.title }}</h4>
+                        {% if item.image != null %} 
+                            <div class="images">
+                                <img class="item-image" src="/assets/images/{{ item.image }}.png" alt="{{ item.title }}" />
+                            </div>
+                        {% endif %}
+                        <p>{{ item.excerpt }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

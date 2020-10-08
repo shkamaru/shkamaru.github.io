@@ -10,7 +10,7 @@
     .navbar-inner-wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 3.2rem 1rem;
+        padding: 3.2rem 2rem;
         max-width: 960px;
         margin: 0 auto;
     }
@@ -23,10 +23,11 @@
 
         .navbar {
             display: flex;
+            font-family: $heading-font-family;
+            font-weight: 400;
         }
 
             .navbar-item {
-                @include font-size(1.6, 1.25);
                 margin: 0 2.4rem;
             }
 
@@ -35,7 +36,7 @@
             }
 
             .navbar-item.active {
-                font-weight: 800;
+                font-weight: 600;
                 border-bottom: 0.2rem solid $black;
                 padding-bottom: 0.3rem;
             }
@@ -48,24 +49,20 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    max-width: 940px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
     .banner-title-wrapper {
-        width: 73%;
+        width: 75%;
         text-align: center;
     }
-        .banner-title {
-            font-family: $heading-font-family;
-            font-weight: 800;
-        }
 
         .banner-title-sub {
-            @include font-size(2.4, 1.5);
-            color: $light-grey;
-            padding-top: 3.4rem;
-            font-family: $text-font-family;
+            @include font-size(2, 2);
+            font-family: $heading-font-family;
+            color: $dark-grey;
+            padding-top: 1.6rem;
         }
     
     .banner-cta {
@@ -74,18 +71,24 @@
 
         .banner-btn {
             margin: 0 3rem;
+            font-family: $heading-font-family;
             border-radius: 0.2rem;
         }
 
     .banner-nav-wrapper {
-        @include font-size(2.0, 1.25);
+        @include font-size(1.6, 2);
         position: absolute;
-        bottom: 5rem;
+        bottom: 6rem;
         text-align: center;
     }
 
+        .banner-nav-link-text {
+            font-family: $heading-font-family;
+        }
+
         .banner-nav-link-icon-wrapper {
-            margin-top: 2rem;
+            @include font-size(2, 2);
+            margin-top: 1rem;
         }
 
 
@@ -105,7 +108,7 @@
     }
 
     .project:first-child {
-        margin-top: 0;
+        margin-top: 4rem;
     }
 
         .project-image-wrapper {
@@ -122,41 +125,143 @@
             width: 100%;
             padding-top: 3rem;
             position: relative;
+            font-family: $heading-font-family;
         }
 
             .project-info-inner {
+                display: flex;
+            }
+
+                .project-info-line {
+                    width: 0.6rem;
+                    flex-shrink: 0;
+                    border-radius: 1rem;
+                    display: none;
+                }
+
+                    .project-desc {
+                        @include font-size(1.6, 2);
+                        color: $dark-grey;
+                    }
+
+            .project-role {
+                @include font-size(1.6, 2);
+                font-weight: 600;
+                margin: 2rem 0 1rem 0;
+            }
+
+                .project-cta-link {
+                    @include font-size(1.6, 2);
+                    color: $blue;
+                    margin-right: 3.2rem; 
+                }
+
+
+.blogs-wrapper {
+    max-width: 960px;
+    margin: 8rem auto 0 auto;
+    padding: 0 1rem;
+}   
+    .blog {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 0 3rem 0 3rem;
+    }
+
+    .blog:first-child {
+        margin-top: 2rem;
+    }
+
+    .blog:last-child hr {
+        border:0;
+    }
+
+        .blog-info-wrapper {
+            width: 100%;
+            padding-top: 4rem;
+            position: relative;
+        }
+            
+            hr {
+                border: 0.15rem solid $off-white;
+            }
+
+
+            .blog-info-inner {
                 display: flex;
                 justify-content: flex-start;
                 align-items: stretch;
             }
 
-                .project-info-line {
-                    width: 0.6rem;
-                    border-radius: 2rem;
-                    display: none;
+                .blog-title {
+                    text-transform: capitalize;
                 }
 
-                    .project-title {
-                        text-transform: capitalize;
-                    }
+                .blog-desc {
+                    @include font-size(1.6, 2);
+                    margin-top: 1.6rem;
+                    font-family: $heading-font-family;
+                    color: $dark-grey;
+                }
 
-                    .project-desc {
-                        @include font-size(1.6, 1.25);
-                        margin-top: 1.6rem;
-                        color: $light-grey;
-                    }
-
-            .project-role {
-                @include font-size(1.6, 1.25);
-                font-weight: 600;
-                margin: 3.2rem 0;
+            .blog-detail {
+                @include font-size(1.6, 2);
+                font-family: $heading-font-family;
+                color: $black;
+                padding: 2rem 0 4rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
 
-                .project-cta-link {
-                    @include font-size(1.6, 1.25);
+                .blog-cta-link {
+                    @include font-size(1.6, 2);
                     color: $blue;
                     margin-right: 3.2rem; 
                 }
+
+ 
+.about-image-wrapper {
+    width: 100vw;
+    height: 55vh;
+    margin: 6rem auto 0 auto;
+    object-fit: cover;
+}
+
+.about-wrapper {
+    max-width: 960px;
+    margin: 6rem auto 4rem auto;
+    padding: 0 1rem;
+}
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 0 3rem 0 3rem;
+        margin-bottom: 4rem;
+    }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-direction: row;
+        }
+        .item-image {
+            width: 100%;
+            padding-top: 2rem;
+        }
+
+        .item-info p {
+            @include font-size(1.6, 2);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
 
 .footer-wrapper {
     background-color: $off-white;
@@ -173,46 +278,35 @@
         align-items: center;
     }
 
-            .contact-head {
-                font-family: $text-font-family;
-                font-weight: 300;
+        .contact-head {
+            font-family: $heading-font-family;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .contact-cta {
+            display: flex;
+            margin: 3rem 0;
+        }
+
+            .contact-cta-item {
+                margin: 0 1.1rem;
             }
 
-            .contact-cta {
-                display: flex;
-                margin-top: 5rem;
-            }
-
-                .contact-cta-item {
-                    margin: 0 1.1rem;
+                .contact-cta-item-link {
+                    cursor: pointer;
                 }
 
-                    .contact-cta-item-link {
-                        cursor: pointer;
+                    .contact-cta-item-link .fab {
+                        @include font-size(3.5, 1.25);
                     }
 
-                        .contact-cta-item-link .fab {
-                            @include font-size(3.5, 1.25);
-                        }
-
-
-.contact-wrapper {
-    margin-top: 8rem;
-    position: relative;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-}
-
-    .contact-info p {
-        @include font-size(1.6, 1.35);
-        padding: 2rem 0;
-    }
-
-        .contact-footer span {
-            display: block;
-            padding: 1rem 0;
-            @include font-size(2, 1.25);
-            font-weight: 600;
+        .contact-author-info p{
+            font-family: $heading-font-family;
+            @include font-size(1.6, 2);
+            color: $black;
+            margin-top: 1rem;
+            text-align: center;
         }
 
 
@@ -239,8 +333,8 @@
 
             .project-info {
                 padding-left: 2rem;
-            }
-    
+            }     
+
     .contact-footer {
         display: flex;
         justify-content: space-between;
@@ -253,6 +347,6 @@
             display: inline-block;
             padding: 0;
         }
-        
+
 
 }
