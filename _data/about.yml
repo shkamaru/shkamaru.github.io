@@ -1,0 +1,39 @@
+- title: 👋🏻 Hi, I’m Pramit
+  image: 
+  excerpt: 
+    A non-typical product person contributing in multiple roles at Zoomcar around design, growth strategies, analytics. I have previously worked with Mozilla as an Open Source Contributor (Google Summer of Code 2018) and ZestMoney as a UI/UX Design intern.
+  show: true
+- title: 📜 Alma Mater & Learnings
+  image: almamater
+  excerpt:
+    Alumni of IIT Roorkee (batch 2019 B.Tech in Electrical Engineering) fortunate enough to explore other interesting subjects including Marketing Research and Data Analysis, Artificial Neural Networks, Data Structures and Algorithms, Robotics, Microprocessor, Economics, Fuzzy Logics etc. 
+    <br/> <br/>
+    I worked on 3 amazing projects during undergrad. The most interesting project being the autonomous flight system of drones using fuzzy logics and comparing results with other ML alogrithms. My other projects were around Marketing Research - Data Analysis (Consumer perception and Satisfaction) and Neural Networks (Stock Price Prediction S&P 500)
+    <br/> <br/>
+    Since college I have indulged in multiple fields to figure out my interests. I started with graphic designing and product designing. Then web development, then  information security, then data science and also tried my hands in market trading. But one thing which I kept on doing was never stop myself from learning things and quickly realizing what I don't want to do in a long term. After all this I finally knew that I want to be a Product Manager.
+  show: true
+- title: 🔩 Skills
+  image: 
+  excerpt: 
+    Dummy Text
+  show: false
+- title: 📚 Books
+  image: 
+  excerpt: 
+    Dummy Text
+  show: false
+- title: ❝ Quotes
+  image: 
+  excerpt: 
+    "Every great design begins with an even great story."
+  show: false
+- title: 🧳 Travel
+  image: 
+  excerpt: 
+    Dummy Text
+  show: false
+- title: 🧠 Philosophers
+  image: 
+  excerpt: 
+    Dummy Text
+  show: false

@@ -1,0 +1,48 @@
+- title: pfb-usability
+  text: 🧪 Usability Testing for Beginners
+  desc: Part-1 of 'Product for Beginners' series - personal notes based on learning. Things beginners should learn (nay) know about Usability Testing in the startup environment
+  tags: 🏷 Usability Testing, Research, Product
+  time: 10 min
+  date: Oct 09, 2020
+  case: https://medium.com/@singhi.pramit/usability-testing-for-beginners-275fec06b650
+  show: true
+- title: e-rick
+  text: 🚕 Solving trouble of e-rickshaws in IIT Roorkee
+  desc: As the only public transport option in campus, lot of problems occur ranging from availability to pricing. This is a 2-day design sprint case study on the solutions around better e-rickshaws manangement in IIT Roorkee
+  tags: 🏷 Product, MVP, Framework, Research
+  time: 9 min
+  date: Dec 17, 2018
+  case: https://uxplanet.org/e-rick-design-sprint-at-iit-roorkee-e8ea60685555
+  show: true
+- title: cerebro
+  text: 🧠 Creating ML competition website for students
+  desc: With the rise of Data Science as a career option, we created Machine Learning competition website for the students to help them practice and improve their skills, maintained by SDS (IIT Roorkee)
+  tags: 🏷 Product, Design, IA
+  time: 9 min
+  date: Nov 29, 2018
+  case: https://blog.prototypr.io/creating-an-ml-competition-platform-for-students-7bc8f0a7f1b1
+  show: true
+- title: pontoon
+  text: 🤘🏻 Contributing to Mozilla during Google Summer of Code 2018
+  desc: Working with Mozilla's localization l10n team on their tool Pontoon to increase the conversion rate of users to contributors by improving Home Page design
+  tags: 🏷 UX, Research, Development
+  time: 7 min
+  date: Aug 13, 2018
+  case: https://blog.prototypr.io/google-summer-of-code-18-with-mozilla-pontoon-89a7cb97af39
+  show: true
+- title: zestMoney
+  text: ✍🏻 First internship, working on a FinTech product
+  desc: Zestmoney one of the earliest companies in Fin-tech working to provide microloans. I worked around the UX improvement and designed user flow mails to get transparency around the process in getting a loan
+  tags: 🏷 UI, UX, Growth, User Flow
+  time: 5 min
+  date: Nov 23, 2018
+  case: https://medium.com/@singhi.pramit/https-medium-com-singhi-pramit-internship-zestmoney-501f6a2b7a80
+  show: true
+- title: enroute
+  text: 🕹 Creating/ Designing 2D games for beginners
+  desc: A 1-day gaming hackathon with problem to create games using Canvas in HTML, maintained by SDS (IIT Roorkee)
+  tags: 🏷 Game, HTML, Graphic
+  time: 6 min
+  date: Jun 14, 2017
+  case: https://medium.com/sdslabs/2-d-game-design-process-for-beginners-57c92237c0a5
+  show: true
