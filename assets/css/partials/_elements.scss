@@ -286,7 +286,7 @@
 
         .contact-cta {
             display: flex;
-            margin-top: 3rem;
+            margin: 3rem 0;
         }
 
             .contact-cta-item {
@@ -300,6 +300,14 @@
                     .contact-cta-item-link .fab {
                         @include font-size(3.5, 1.25);
                     }
+
+        .contact-author-info p{
+            font-family: $heading-font-family;
+            @include font-size(1.6, 2);
+            color: $black;
+            margin-top: 1rem;
+            text-align: center;
+        }
 
 
 @media #{$bp-sm} {
