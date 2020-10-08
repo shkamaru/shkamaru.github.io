@@ -34,6 +34,7 @@ This website aims to be a collection of all my learning in the world of product,
 
 ### Run in Local System
 Clone the repository in the local system. Then in terminal, write `bundle exec jekyll serve`
+Clean the jekyll-cache if appears before a commit through `bundle exec jekyll clean`
 
 ### Guidelines
 Please follow the guidelines for contribution to keep code clean
