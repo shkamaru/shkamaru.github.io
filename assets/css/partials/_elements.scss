@@ -51,18 +51,28 @@
     position: relative;
     max-width: 960px;
     margin: 0 auto;
+    font-family: $heading-font-family;
 }
 
     .banner-title-wrapper {
-        width: 75%;
+        width: 90%;
         text-align: center;
     }
 
         .banner-title-sub {
             @include font-size(2, 2);
-            font-family: $heading-font-family;
             color: $dark-grey;
             padding-top: 1.6rem;
+        }
+
+    .banner-title-info {
+        @include font-size(2, 2);
+        color: $dark-grey;
+        padding-top: 1.6rem;
+    }
+
+        .banner-title-info a{
+            color: $blue;
         }
     
     .banner-cta {
@@ -71,7 +81,6 @@
 
         .banner-btn {
             margin: 0 3rem;
-            font-family: $heading-font-family;
             border-radius: 0.2rem;
         }
 
@@ -81,10 +90,6 @@
         bottom: 6rem;
         text-align: center;
     }
-
-        .banner-nav-link-text {
-            font-family: $heading-font-family;
-        }
 
         .banner-nav-link-icon-wrapper {
             @include font-size(2, 2);
@@ -262,6 +267,10 @@
             margin-bottom: 1rem;
         }
 
+            .item-info a{
+                color: $blue;
+            }
+
 
 .footer-wrapper {
     background-color: $off-white;
@@ -312,6 +321,10 @@
 
 @media #{$bp-sm} {
     
+    .banner-title-wrapper {
+        width: 75%;
+    }
+
     .project {
         flex-direction: row;
         padding: 0;
