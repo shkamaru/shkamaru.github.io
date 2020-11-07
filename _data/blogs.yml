@@ -1,10 +1,18 @@
+- title: pfb-communication
+  text: 🗣 Brand Personality & Communication for Beginners
+  desc: Part-2 of 'Product for Beginners' series - personal notes based on learning. Things beginners should learn (nay) know about Brand Personality & Communication in the startup environment
+  tags: 🏷 Branding, Communication, Marketing
+  time: 13 min
+  date: Nov 08, 2020
+  case: https://pramit-singhi.medium.com/brand-personality-communication-for-beginners-395d5ba768
+  show: true
 - title: pfb-usability
   text: 🧪 Usability Testing for Beginners
   desc: Part-1 of 'Product for Beginners' series - personal notes based on learning. Things beginners should learn (nay) know about Usability Testing in the startup environment
   tags: 🏷 Usability Testing, Research, Product
   time: 10 min
   date: Oct 09, 2020
-  case: https://medium.com/@singhi.pramit/usability-testing-for-beginners-275fec06b650
+  case: https://medium.com/swlh/usability-testing-for-beginners-275fec06b650
   show: true
 - title: e-rick
   text: 🚕 Solving trouble of e-rickshaws in IIT Roorkee
