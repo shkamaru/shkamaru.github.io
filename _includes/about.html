@@ -1,5 +1,5 @@
 <div id="about">
-    <img class="about-image-wrapper" src="/assets/images/cover.png" />
+    <img class="about-image-wrapper" src="/assets/images/about/cover.png" />
 </div>
 <div class="about-wrapper" id="about">
     {% for item in site.data.about%}
@@ -10,7 +10,7 @@
                         <h4>{{ item.title }}</h4>
                         {% if item.image != null %} 
                             <div class="images">
-                                <img class="item-image" src="/assets/images/{{ item.image }}.png" alt="{{ item.title }}" />
+                                <img class="item-image" src="/assets/images/about/{{ item.image }}.png" alt="{{ item.title }}" />
                             </div>
                         {% endif %}
                         <p>{{ item.excerpt }}</p>
