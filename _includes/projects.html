@@ -1,6 +1,6 @@
 <div class="projects-wrapper" id="projects">
     {% for project in site.data.projects %}
-        {% if project.show == true %}
+        {% unless project.show == false %}
             <div class="project">
                 <div class="project-image-wrapper">
                     <img class="project-image" src="/assets/images/{{ project.title }}.png" alt="{{ project.title }}" />
@@ -10,7 +10,7 @@
                         <div style="background-color:{{ project.color }}" class="project-info-line"></div>
                         <div class="project-info">
                             <h3 class="project-title">
-                                {{ project.title | capitalize }}
+                                {{ project.title | camelcase }}
                             </h3>
                             <p class="project-desc">
                                 {{ project.desc }}
@@ -21,15 +21,19 @@
                         {{ project.role }}
                     </div>
                     <div class="project-cta">
-                        <a href="{{ project.case }}" target="_blank" class="project-cta-link">
-                            Case Study
-                        </a>
-                        <a href="{{ project.shots }}" target="_blank" class="project-cta-link">
-                            Design Shots
-                        </a>
+                        {% if project.case %}
+                            <a href="{{ project.case }}" target="_blank" class="project-cta-link">
+                                Case Study
+                            </a>
+                        {% endif %}
+                        {% if project.shots %}
+                            <a href="{{ project.shots }}" target="_blank" class="project-cta-link">
+                                Design Shots
+                            </a>
+                        {% endif %}    
                     </div>
                 </div>
             </div>
-        {% endif %}
+        {% endunless %}
     {% endfor %}
 </div>
