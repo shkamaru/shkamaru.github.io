@@ -1,7 +1,7 @@
 - title: Supermiler Elite
   desc: Membership program for Zoomcar users, providing elite benefits on every booking
   role: Product Manager
-  case: https://dribbble.com/shots/5742387-E-Rick
+  case:
   shots:
   color: '#E09F2D'
   show: true
@@ -9,14 +9,14 @@
   desc: Providing 100% sanitized-clean cars for in-city short trips without the hassle of security deposit at Zoomcar
   role: Product Manager
   case:
-  shots: https://dribbble.com/shots/5742387-E-Rick
+  shots:
   color: '#6F81D6'
   show: true
 - title: Supermiler Club
   desc: Revamped Zoomcar's Loyalty program aimed at rewarding users on booking and incentivizing on habit forming tasks
   role: Product Manager
   case:
-  shots: https://dribbble.com/shots/5742387-E-Rick
+  shots:
   color: '#28C72D'
   show: true
 - title: E-Rick
