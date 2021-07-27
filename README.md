@@ -16,4 +16,3 @@ This website aims to be a collection of all my learning in the world of product,
 - Liquid is the templating language to process pages on the site. Liquid can output and modify variables, have logic statements inside the pages and loop over content.
 
 - YAML is a format that relies on white spacing to separate out the various elements of content. Jekyll allows to use Liquid with YAML as a way to parse through the data. Storing items for the table of contents is one of the most common uses of YAML with Jekyll.
-
