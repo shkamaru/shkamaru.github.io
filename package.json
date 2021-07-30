@@ -12,6 +12,9 @@
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-shell": "^0.8.0",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "glob-parent": "^6.0.1"
   }
 }
