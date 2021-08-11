@@ -1,11 +1,10 @@
 body {
-	@include font-size(1.4, 1.25);
-	font-family: 'IBM Plex Serif', serif;
+	@include font-size(1.6, 2);
+	font-family: $text-font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-weight: 600;
+	font-family: $heading-font-family;
 	font-style: normal;
 }
 
@@ -23,4 +22,9 @@ h4 {
 
 button {
 	@include font-size(1.6, 1.25);
+}
+
+.logo {
+	@include font-size(3, 1.25);
+	font-family: $logo-font-family;
 }
