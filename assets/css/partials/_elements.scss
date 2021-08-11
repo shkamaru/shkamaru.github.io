@@ -13,18 +13,11 @@
         padding: 3.2rem 2rem;
         max-width: 960px;
         margin: 0 auto;
+        font-family: $heading-font-family;
     }
-
-        .navbar-header {
-            @include font-size(1.6, 1.25);
-            font-family: $heading-font-family;
-            font-weight: 600;
-        }
 
         .navbar {
             display: flex;
-            font-family: $heading-font-family;
-            font-weight: 400;
         }
 
             .navbar-item {
@@ -36,7 +29,6 @@
             }
 
             .navbar-item.active {
-                font-weight: 600;
                 border-bottom: 0.2rem solid $black;
                 padding-bottom: 0.3rem;
             }
@@ -51,7 +43,6 @@
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    font-family: $heading-font-family;
 }
 
     .banner-title-wrapper {
@@ -81,11 +72,10 @@
 
         .banner-btn {
             margin: 0 3rem;
-            border-radius: 0.2rem;
+            border-radius: 0.4rem;
         }
 
     .banner-nav-wrapper {
-        @include font-size(1.6, 2);
         position: absolute;
         bottom: 6rem;
         text-align: center;
@@ -130,7 +120,6 @@
             width: 100%;
             padding-top: 3rem;
             position: relative;
-            font-family: $heading-font-family;
         }
 
             .project-info-inner {
@@ -145,18 +134,15 @@
                 }
 
                     .project-desc {
-                        @include font-size(1.6, 2);
                         color: $dark-grey;
                     }
 
             .project-role {
-                @include font-size(1.6, 2);
                 font-weight: 600;
                 margin: 2rem 0 1rem 0;
             }
 
                 .project-cta-link {
-                    @include font-size(1.6, 2);
                     color: $blue;
                     margin-right: 3.2rem; 
                 }
@@ -205,15 +191,11 @@
                 }
 
                 .blog-desc {
-                    @include font-size(1.6, 2);
                     margin-top: 1.6rem;
-                    font-family: $heading-font-family;
                     color: $dark-grey;
                 }
 
             .blog-detail {
-                @include font-size(1.6, 2);
-                font-family: $heading-font-family;
                 color: $black;
                 padding: 2rem 0 4rem 0;
                 display: flex;
@@ -221,8 +203,7 @@
                 justify-content: space-between;
             }
 
-                .blog-cta-link {
-                    @include font-size(1.6, 2);
+                .blog-cta {
                     color: $blue;
                     margin-right: 3.2rem; 
                 }
@@ -262,7 +243,6 @@
         }
 
         .item-info p {
-            @include font-size(1.6, 2);
             margin-top: 2rem;
             margin-bottom: 1rem;
         }
@@ -288,8 +268,6 @@
     }
 
         .contact-head {
-            font-family: $heading-font-family;
-            font-weight: 300;
             text-align: center;
         }
 
@@ -307,12 +285,10 @@
                 }
 
                     .contact-cta-item-link .fab {
-                        @include font-size(3.5, 1.25);
+                        @include font-size(3, 0);
                     }
 
         .contact-author-info p{
-            font-family: $heading-font-family;
-            @include font-size(1.6, 2);
             color: $black;
             margin-top: 1rem;
             text-align: center;
