@@ -21,18 +21,18 @@ html {
 	}
 
 	h1 {
-		color: $black;
+		color: $dark-primary;
 	}
 
 	button {
 		padding: 1.5rem 4.5rem;
-		border: 0.1rem solid $black;
+		border: 0.1rem solid $dark-primary;
 		border-radius: 0.5rem;
 		cursor: pointer;
 	}
 
 	button:hover {
-		background-color: $black;
+		background-color: $dark-primary;
 		color: $white;
 	}
 
