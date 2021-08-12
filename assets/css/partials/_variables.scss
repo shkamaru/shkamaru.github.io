@@ -14,10 +14,12 @@ $heading-font-family: 'Lato', sans-serif;
 $text-font-family: 'IBM Plex Sans', sans-serif;
 $logo-font-family: 'Staatliches', sans-serif;
 
-$black: #333333;
-$dark-grey: #757575;
-$off-white: #FAFAFA;
+$dark-primary: #333333; // h2 to h6
+$dark-grey: #37433F; // body 
+$off-white: #F5FAF9;
 $white: #FFFFFF;
-$blue: #009AD4;
+$blue: #009AD4; // links
+$shadow: #E5E5E5; // box-shadow
+$highlight: #2A7B4B; // h1 and hover
 
 $base-path: '/assets/images';
