@@ -4,40 +4,10 @@
     Welcome to my personal website.
     <br/>I am a product person for past 3+ years working in different kinds of businesses like mobility, fintech and SaaS space. I like to read a lot about business models, startups and products in general.
     <br/>
-    I am currently a Product Manager at <a href="https://zeda.io/" target="_blank">Zeda.io</a>, where I am working on building a platform that helps product teams build the right product, faster and better. Before joining Zeda.io, I was a member of the product team at <a href="https://lazypay.in/" target="_blank">LazyPay (PayU)</a> in the BNPL team (Buy Now Pay Later solution) for the Indian market. I also have experience working in the product team at <a href="https://www.zoomcar.com/" target="_blank">Zoomcar</a> and have contributed to <a href="https://pontoon.mozilla.org/" target="_blank">Mozilla</a> as an Open Source Contributor <a href="https://summerofcode.withgoogle.com/archive/2018/projects/5671905759592448" target="_blank"/>(Google Summer of Code 2018)</a> and worked as a UI/UX Design intern at <a href="https://www.zestmoney.in/" target="_blank">ZestMoney</a>.
-    <div style="width:100%;height:0;padding-bottom:56%;padding-top:4%;position:relative;"><iframe src="https://giphy.com/embed/n4oKYFlAcv2AU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
   show: true
-- title: 📜 Alma Mater & Learnings
-  image: almamater
-  excerpt:
-    Alumni of IIT Roorkee (batch 2019 B.Tech in Electrical Engineering) fortunate enough to explore other interesting subjects including Marketing Research and Data Analysis, Artificial Neural Networks, Data Structures and Algorithms, Robotics, Microprocessor, Economics, Fuzzy Logics etc. 
-    <br/> <br/>
-    I worked on 3 amazing projects during undergrad. The most interesting project being the autonomous flight system of drones using fuzzy logics and comparing results with other ML alogrithms. My other projects were around Marketing Research - Data Analysis (Consumer perception and Satisfaction) and Neural Networks (Stock Price Prediction S&P 500)
-    <br/> <br/>
-    Since college I have indulged in multiple fields to figure out my interests. I started exploring graphic and product designing. Then web development, then  information security, then data science and also got an intern as Market Analyst. But one thing which I kept on doing was never stop from learning things and quickly realizing what I don't want to do in a long term.
-  show: false
-- title: 🔩 Skills
-  image: 
-  excerpt: 
-    Dummy Text
-  show: false
-- title: 📚 Books
-  image: 
-  excerpt: 
-    Dummy Text
-  show: false
-- title: ❝ Quotes
-  image: 
-  excerpt: 
-    "Every great design begins with an even great story."
-  show: false
-- title: 🧳 Travel
-  image: 
-  excerpt: 
-    Dummy Text
-  show: false
-- title: 🧠 Philosophers
-  image: 
-  excerpt: 
-    Dummy Text
-  show: false
+# To add new section on about.html
+# - title: (section name)
+#   image: (reference to image in assets/images/about)
+#   excerpt: 
+#     (dummy text)
+#   show: (boolean for visibility)
