@@ -1,15 +1,8 @@
 - color: '#0073b1'
   icon: 'linkedin'
   link: https://www.linkedin.com/in/pramit-singhi/
-- color: '#000000'
-  icon: 'medium'
-  link: https://pramit-singhi.medium.com/
-- color: '#553b08'
-  icon: 'goodreads'
-  link: https://www.goodreads.com/user/show/45944730-pramit-singhi
-# - color: '#24292e' 
-#   icon: 'github-square'
-#   link: https://github.com/shkamaru
-# - color: '#ea4c89'
-#   icon: 'dribbble-square'
-#   link: https://dribbble.com/shkamaru
+
+# To add new social platform link in footer.html
+# - color: ('rgb color code') 
+#   icon: ('platform-icon')
+#   link: (url)
