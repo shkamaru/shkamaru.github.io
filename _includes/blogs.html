@@ -1,3 +1,4 @@
+<!-- Active Page -->
 <div class="blogs-wrapper" id="blogs">
     {% for blog in site.data.blogs %}
         {% if blog.show == true %}
@@ -6,7 +7,7 @@
                     <div class="blog-info-inner">    
                         <div class="blog-info">
                             <div class="blog-cta">
-                                <a href="{{ blog.case }}" target="_blank">
+                                <a href="{{ blog.url}}">
                                     <h4 class="blog-title">
                                         {{ blog.text }}
                                     </h4>
@@ -18,7 +19,7 @@
                         </div>
                     </div>
                     <div class="blog-detail">
-                        <span> {{blog.date | prepend: '🗓 '}} {{ blog.time | append: ' read)' | prepend: '('}}</span>
+                        <span>{{ blog.date }}</span>
                         <span>{{ blog.tags }}</span>
                     </div>
                     <hr>
