@@ -1,11 +1,4 @@
-- title: 👋🏻 Hi, I’m Pramit
-  image: 
-  excerpt:
-    Welcome to my personal website.
-    <br/>I am a product person for past 3+ years working in different kinds of businesses like mobility, fintech and SaaS space. I like to read a lot about business models, startups and products in general.
-    <br/>
-  show: true
-# To add new section on about.html
+# To add a new detail section in about.html
 # - title: (section name)
 #   image: (reference to image in assets/images/about)
 #   excerpt: 

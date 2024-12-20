@@ -12,14 +12,15 @@ $body-max-width: 1950px;
 
 $heading-font-family: 'Lato', sans-serif;
 $text-font-family: 'IBM Plex Sans', sans-serif;
-$logo-font-family: 'Staatliches', sans-serif;
 
 $dark-primary: #333333; // h2 to h6
 $dark-grey: #37433F; // body 
 $off-white: #F5FAF9;
 $white: #FFFFFF;
-$blue: #009AD4; // links
+$blue: #009AD4; 
 $shadow: #E5E5E5; // box-shadow
-$highlight: #2A7B4B; // h1 and hover
+$highlight: #0f4c81; //2A7B4B h1 and hover
+$highlight-dark: #19364F; //background
+$link-highlight: #56A577; // links for highlight
 
 $base-path: '/assets/images';
