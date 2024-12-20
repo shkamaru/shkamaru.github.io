@@ -27,6 +27,8 @@ github_username:  shkamaru
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - github-pages
 
 sass:
     sass_dir: ./assets/css/partials
