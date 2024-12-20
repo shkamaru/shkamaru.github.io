@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Pramit Singhi
 email: singhi.pramit@gmail.com
-# FIXME: description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:"
   Personal Website of Pramit Singhi, a product manager and product blogger. 
   At the moment, mangaing products at Zoomcar. Previously worked with Mozilla and Zest Money.
   Alumni of IIT Roorkee, batch of 2019.
