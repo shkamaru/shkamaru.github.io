@@ -1,2 +1,2 @@
-#### Target
-Experiment page to test out new ideas with users.
+#### Personal website for experiments
+Page to test out new ideas with users.
