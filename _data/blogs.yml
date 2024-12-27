@@ -8,12 +8,12 @@
 #   date: (date of publishing)
 #   url: (note link)
 #   show: (boolean for visibility)
-- text: Memory of AI Agents
+- text: Memory of AI agents
   desc: With the advent of AI, the memory of AI agents is a crucial aspect to understand. This article explains the concept of memory in AI agents and how it is implemented in AI systems.
   tags: 
-  date: 21st Dec '24' 
+  date: 21st Dec '24
   url: 2024/12/21/AI-agent-memory.html
-  show: true
+  show: false
 
 # ====
 # Previous notes
