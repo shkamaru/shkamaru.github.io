@@ -1,15 +1,10 @@
-<!-- Necessary/ Default Page -->
-<nav class="navbar-wrapper">
-    <div class="navbar-inner-wrapper">
-        <div class="logo">
-            <a href="/" title="Home">👾</a>
-        </div>
-        <div class="navbar">
-            {% for item in site.data.nav %}
-                <div {% if page.url == item.link %}class="navbar-item active"{% endif %} class="navbar-item" >
-                    <a href="{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+<nav class="nav">
+  <div class="wrap">
+    <a href="/" class="nav-logo" title="Home">👾</a>
+    <ul class="nav-list">
+      {% for item in site.data.nav %}
+        <li><a href="{{ item.link }}"{% if page.url == item.link %} class="active"{% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </nav>

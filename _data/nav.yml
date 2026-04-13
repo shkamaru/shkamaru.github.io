@@ -1,5 +1,5 @@
-# To add a new section in nav.html 
+# To add a new section in nav.html
 # - name: (section name, for example About)
 #   link: /about.html
 - name: Notes
-  link: /blogs.html
+  link: "/#notes"

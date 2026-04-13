@@ -1,206 +1,371 @@
-.navbar-wrapper {
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    background-color: $white;
-    box-shadow: 0px 0px 1rem $shadow;
-    top: 0;
+/* ─────────────────────────────────────────────────────
+   Design tokens
+   Warm cream background creates temperature tension
+   against the near-black ink. Sienna accent used sparingly.
+───────────────────────────────────────────────────── */
+:root {
+  --bg:       #F2EDE3;
+  --ink:      #1A1714;
+  --ink-mid:  #7A7268;
+  --ink-dim:  #B4ADA3;
+  --accent:   #8A5C3C;
+  --rule:     #E1DBD0;
+  --max-w:    800px;
+  --pad-x:    2rem;
 }
 
-    .navbar-inner-wrapper {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        max-width: 960px;
-        margin: 0 auto;
-        font-family: $heading-font-family;
-    }
-    
-        .navbar {
-            display: flex;
-            color: $dark-primary;
-        }
-        
-        .navbar a:hover {
-            color: $highlight;
-        }
-
-            .navbar-item {
-                margin: auto 2.4rem;
-            }
-
-            .navbar-item:last-child {
-                margin-right: 0;
-            }
-
-            .navbar-item.active {
-                border-bottom: 3px solid $link-highlight;
-            }
-
-
-.banner {
-    height: 94vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
+/* ─── Base ─── */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-    .banner-title-wrapper {
-        width: 90%;
-        text-align: center;
-    }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
 
-        .banner-title-sub {
-            @include font-size(2, 2);
-            padding-top: 1.6rem;
-        }
+/* Subtle paper grain — adds warmth without visual noise */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.022;
+  pointer-events: none;
+  z-index: 9000;
+}
 
-    .banner-title-info {
-        @include font-size(2, 2);
-        padding-top: 1.6rem;
-    }
+/* ─── Layout container ─── */
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
 
-        .banner-title-info a{
-            color: $highlight;
-            font-weight: 800;
-        }
-    
-    .banner-cta {
-        margin-top: 4rem;
-    }
+/* ─── Keyframe ─── */
+@keyframes appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
-        .banner-btn {
-            margin: 0 3rem;
-            border-radius: 0.4rem;
-        }
+/* ─────────────────────────────────────────────────────
+   NAV
+───────────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(242, 237, 227, 0.93);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  animation: appear 0.5s ease forwards 0.1s;
+}
 
-    .banner-nav-wrapper {
-        position: absolute;
-        bottom: 6rem;
-        text-align: center;
-    }
+.nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-        .banner-nav-link-icon-wrapper {
-            color: $highlight;
-            @include font-size(2, 2);
-            margin-top: 1rem;
-        }
+.nav-logo {
+  font-size: 1.1rem;
+  line-height: 1;
+}
 
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
 
-.blogs-wrapper {
-    max-width: 960px;
-    margin: 8rem auto 0 auto;
-    padding: 0 1rem;
-}   
-    .blog {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        flex-direction: column;
-        padding: 0 3rem 0 3rem;
-    }
+.nav-list a {
+  font-size: 0.57rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  transition: color 0.2s ease;
+}
 
-    .blog:first-child {
-        margin-top: 2rem;
-    }
+.nav-list a:hover,
+.nav-list a.active {
+  color: var(--ink);
+}
 
-    .blog:last-child hr {
-        border:0;
-    }
+/* ─────────────────────────────────────────────────────
+   HERO
+───────────────────────────────────────────────────── */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+}
 
-        .blog-info-wrapper {
-            width: 100%;
-            padding-top: 4rem;
-            position: relative;
-        }
-            
-            hr {
-                border: 0.15rem solid $off-white;
-            }
+.hero .wrap {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+.hero-context {
+  font-size: 0.54rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 1.6rem;
+  opacity: 0;
+  animation: appear 0.6s ease forwards 0.4s;
+}
 
-            .blog-info-inner {
-                display: flex;
-                justify-content: flex-start;
-                align-items: stretch;
-            }
+/* Fraunces italic 500 at opsz:72 — optically sized for mid-display.
+   Refined and confident without shouting. */
+.hero-name {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 72;
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: appear 0.7s ease forwards 0.55s;
+}
 
-                .blog-title {
-                    text-transform: capitalize;
-                }
+/* 48px rule — the one decorative element, placed with intention */
+.hero-rule {
+  width: 48px;
+  height: 1px;
+  background: var(--rule);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: appear 0.5s ease forwards 0.75s;
+}
 
-                .blog-desc {
-                    margin-top: 1.6rem;
-                }
+/* Lora 400 italic — warmth and readability */
+.hero-bio {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.85;
+  color: var(--ink-mid);
+  max-width: 480px;
+  margin-bottom: 2.25rem;
+  opacity: 0;
+  animation: appear 0.7s ease forwards 0.9s;
+}
 
-            .blog-detail {
-                padding: 2rem 0 4rem 0;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
+/* Sienna link — the only color on the page */
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(138, 92, 60, 0.28);
+  padding-bottom: 0.12rem;
+  opacity: 0;
+  animation: appear 0.6s ease forwards 1.05s;
+  transition: border-color 0.2s ease, gap 0.22s ease;
+}
 
-                .blog-title:hover {
-                    color: $highlight; 
-                }
+.hero-link:hover {
+  border-color: var(--accent);
+  gap: 0.6rem;
+}
 
+.hero-link .arr {
+  display: inline-block;
+  transition: transform 0.22s ease;
+}
+
+.hero-link:hover .arr {
+  transform: translateX(3px);
+}
+
+/* ─────────────────────────────────────────────────────
+   NOTES SECTION
+───────────────────────────────────────────────────── */
+.notes {
+  padding: 5rem 0 6rem;
+  border-top: 1px solid var(--rule);
+}
+
+.notes-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.section-label {
+  font-size: 0.54rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+/* Each note row — table-like, clean */
+.note-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--rule);
+  color: inherit;
+  /* Scroll reveal — starts invisible */
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.note-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fraunces italic at reading scale — opsz:36 for mid-size display */
+.note-title {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 36;
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  line-height: 1.2;
+  color: var(--ink);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Underline draws from left — the only hover animation */
+.note-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.note-row:hover .note-title {
+  color: var(--accent);
+}
+
+.note-row:hover .note-title::after {
+  transform: scaleX(1);
+}
+
+.note-date {
+  flex-shrink: 0;
+  font-size: 0.53rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+/* ─────────────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--rule);
+  padding: 1.75rem 0;
+}
+
+.footer .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-dim);
+}
+
+.footer-logo {
+  font-size: 1rem;
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────────
+   NOTE CONTENT PAGE (individual note layout)
+───────────────────────────────────────────────────── */
 .note-wrapper {
-    max-width: 960px;
-    margin: 8rem auto 8rem auto;
-    padding: 4rem 4rem;
+  max-width: var(--max-w);
+  margin: 7rem auto 5rem;
+  padding: 0 var(--pad-x);
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink-mid);
 }
 
- 
-.about-image-wrapper {
-    width: 100vw;
-    height: 55vh;
-    margin: 6rem auto 0 auto;
-    object-fit: cover;
+.note-wrapper h1,
+.note-wrapper h2,
+.note-wrapper h3 {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 72;
+  color: var(--ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
-.about-wrapper {
-    max-width: 960px;
-    margin: 6rem auto 4rem auto;
-    padding: 0 1rem;
+.note-wrapper h1 { font-size: clamp(2rem, 4vw, 3rem); }
+.note-wrapper h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+.note-wrapper h3 { font-size: clamp(1.1rem, 2vw, 1.5rem); }
+
+.note-wrapper p { margin-bottom: 1.5rem; }
+
+.note-wrapper a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(138, 92, 60, 0.3);
+  transition: border-color 0.2s ease;
 }
 
-    .item {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        flex-direction: column;
-        padding: 0 3rem 0 3rem;
-        margin-bottom: 4rem;
-    }
-        .images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: stretch;
-            flex-direction: row;
-        }
-        .item-image {
-            width: 100%;
-            padding-top: 2rem;
-        }
+.note-wrapper a:hover {
+  border-color: var(--accent);
+}
 
-        .item-info p {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
+/* ─────────────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  :root {
+    --pad-x: 1.25rem;
+  }
 
-            .item-info a{
-                color: $blue;
-            }
+  .hero-name {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
 
-
-@media #{$bp-sm} {
-    
-    .banner-title-wrapper {
-        width: 75%;
-    }
+  .note-row {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 }
