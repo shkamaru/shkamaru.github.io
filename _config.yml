@@ -16,8 +16,8 @@
 title: Pramit Singhi
 email: singhi.pramit@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal Website of Pramit Singhi, a product manager and product blogger. 
-  At the moment, mangaing products at Zoomcar. Previously worked with Mozilla and Zest Money.
+  Personal Website of Pramit Singhi, a product manager and a blogger. 
+  Primarily has worked in startups both as operator and investor.
   Alumni of IIT Roorkee, batch of 2019.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shkamaru.github.io" # the base hostname & protocol for your site, e.g. http://example.com
