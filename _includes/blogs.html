@@ -1,33 +1,15 @@
-<!-- Active Page -->
-<div class="blogs-wrapper" id="blogs">
-    {% assign visible_blogs = site.data.blogs | where: "show", true %}
-    {% if visible_blogs.size > 0 %}
-        {% for blog in visible_blogs %}
-            <div class="blog">
-                    <div class="blog-info-wrapper">
-                        <div class="blog-info-inner">    
-                            <div class="blog-info">
-                                <div class="blog-cta">
-                                    <a href="{{ blog.url}}">
-                                        <h4 class="blog-title">
-                                            {{ blog.text }}
-                                        </h4>
-                                    </a>
-                                </div>
-                                <p class="blog-desc">
-                                    {{ blog.desc }}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="blog-detail">
-                            <span>{{ blog.date }}</span>
-                            <span>{{ blog.tags }}</span>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
-        {% endfor %}
-    {% else %}
-        <p>No blogs available at the moment. Please check back later.</p>
-    {% endif %}
-</div>
+{% assign visible_blogs = site.data.blogs | where: "show", true %}
+<section class="notes" id="notes">
+  <div class="wrap">
+    <div class="notes-header">
+      <span class="section-label">Notes</span>
+      <span class="section-label">{% if visible_blogs.size < 10 %}0{% endif %}{{ visible_blogs.size }} published</span>
+    </div>
+    {% for blog in visible_blogs %}
+    <a href="{{ blog.url }}" class="note-row">
+      <span class="note-title">{{ blog.text }}</span>
+      <span class="note-date">{{ blog.date }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
