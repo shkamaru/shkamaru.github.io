@@ -1,8 +1,7 @@
 ---
 layout: note
 title: "Evolution Of AI Agents"
---- 
-#### {{ page.title }} 
+published: true
 ---
 SaaS has been a VC favourite sector for decades due to the consistency of impact, returns and scale of solutions. 
 
@@ -35,5 +34,3 @@ The focus on founders building this kind of product to replace the legacy soluti
 #### Challenges
 - promoting the solution - migration from existing solutions
 - Pricing of the solution
-
-

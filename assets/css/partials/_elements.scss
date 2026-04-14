@@ -124,12 +124,12 @@ body::after {
   animation: appear 0.6s ease forwards 0.4s;
 }
 
-/* Fraunces italic 500 at opsz:72 — optically sized for mid-display.
+/* Fraunces regular 400 at opsz:72 — optically sized for mid-display.
    Refined and confident without shouting. */
 .hero-name {
   font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-weight: 500;
+  font-style: regular;
+  font-weight: 400;
   font-variation-settings: 'opsz' 72;
   font-size: clamp(2.8rem, 5.5vw, 4.8rem);
   line-height: 1.02;
@@ -150,10 +150,10 @@ body::after {
   animation: appear 0.5s ease forwards 0.75s;
 }
 
-/* Lora 400 italic — warmth and readability */
+/* Lora 400 regular — warmth and readability */
 .hero-bio {
   font-family: 'Lora', serif;
-  font-style: italic;
+  font-style: regular;
   font-weight: 400;
   font-size: clamp(1rem, 1.6vw, 1.15rem);
   line-height: 1.85;
@@ -236,10 +236,10 @@ body::after {
   transform: translateY(0);
 }
 
-/* Fraunces italic at reading scale — opsz:36 for mid-size display */
+/* Fraunces regular at reading scale — opsz:36 for mid-size display */
 .note-title {
   font-family: 'Fraunces', serif;
-  font-style: italic;
+  font-style: regular;
   font-weight: 400;
   font-variation-settings: 'opsz' 36;
   font-size: clamp(1.05rem, 2vw, 1.5rem);
@@ -317,18 +317,37 @@ body::after {
   margin: 7rem auto 5rem;
   padding: 0 var(--pad-x);
   font-family: 'Lora', serif;
-  font-style: italic;
+  font-style: regular;
   font-size: 1.05rem;
   line-height: 1.85;
   color: var(--ink-mid);
+}
+
+.note-page-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 72;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+}
+
+.note-page-date {
+  font-family: 'Lora', serif;
+  font-size: 0.875rem;
+  color: var(--ink-mid);
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 .note-wrapper h1,
 .note-wrapper h2,
 .note-wrapper h3 {
   font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-weight: 500;
+  font-style: regular;
+  font-weight: 400;
   font-variation-settings: 'opsz' 72;
   color: var(--ink);
   margin-top: 2.5rem;

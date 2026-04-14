@@ -1,7 +1,6 @@
 ---
 layout: note
 title: "Memory Of AI Agents"
---- 
-#### {{ page.title }} 
+published: true
 ---
 New sample
