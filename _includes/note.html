@@ -1,3 +1,6 @@
 <div class="note-wrapper" id="note">
+    <h4 class="note-page-title">{{ page.title }}</h4>
+    <span class="note-page-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    <hr>
     {{ page.content }}
 </div>

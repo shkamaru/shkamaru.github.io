@@ -1,14 +1,13 @@
-{% assign visible_blogs = site.data.blogs | where: "show", true %}
 <section class="notes" id="notes">
   <div class="wrap">
     <div class="notes-header">
       <span class="section-label">Notes</span>
-      <span class="section-label">{% if visible_blogs.size < 10 %}0{% endif %}{{ visible_blogs.size }} published</span>
+      <span class="section-label">{% if site.posts.size < 10 %}0{% endif %}{{ site.posts.size }} published</span>
     </div>
-    {% for blog in visible_blogs %}
-    <a href="{{ blog.url }}" class="note-row">
-      <span class="note-title">{{ blog.text }}</span>
-      <span class="note-date">{{ blog.date }}</span>
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="note-row">
+      <span class="note-title">{{ post.title }}</span>
+      <span class="note-date">{{ post.date | date: "%b %d, '%y" }}</span>
     </a>
     {% endfor %}
   </div>

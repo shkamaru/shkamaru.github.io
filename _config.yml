@@ -25,6 +25,7 @@ github_username:  shkamaru
 
 # Build settings
 markdown: kramdown
+future: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

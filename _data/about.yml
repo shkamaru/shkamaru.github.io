@@ -1,6 +1,0 @@
-# To add a new detail section in about.html
-# - title: (section name)
-#   image: (reference to image in assets/images/about)
-#   excerpt: 
-#     (dummy text)
-#   show: (boolean for visibility)
