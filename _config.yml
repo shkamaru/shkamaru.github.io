@@ -26,6 +26,12 @@ github_username:  shkamaru
 # Build settings
 markdown: kramdown
 future: true
+
+collections:
+  playground:
+    output: true
+    permalink: /playground/:name
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

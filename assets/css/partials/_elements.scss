@@ -18,6 +18,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -26,7 +27,14 @@ body {
   font-family: 'JetBrains Mono', monospace;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+body > * { flex-shrink: 0; }
+
+.footer { margin-top: auto; }
 
 /* Subtle paper grain — adds warmth without visual noise */
 body::after {
@@ -186,6 +194,8 @@ body::after {
 
 /* ─────────────────────────────────────────────────────
    NOTES SECTION
+   Editorial archive: numbered index, clear hierarchy.
+   Each row is a reading-list entry, not a generic link.
 ───────────────────────────────────────────────────── */
 .notes {
   padding: 5rem 0 6rem;
@@ -206,19 +216,18 @@ body::after {
   color: var(--ink-dim);
 }
 
-/* Each note row — table-like, clean */
 .note-row {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1.4rem 0;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.4rem 1rem;
+  margin: 0 -1rem;
   border-top: 1px solid var(--rule);
   color: inherit;
-  /* Scroll reveal — starts invisible */
+  /* Scroll reveal */
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: opacity 0.45s ease, transform 0.45s ease, background 0.22s ease, box-shadow 0.22s ease;
 }
 
 .note-row.visible {
@@ -226,47 +235,318 @@ body::after {
   transform: translateY(0);
 }
 
-/* Fraunces regular at reading scale — opsz:36 for mid-size display */
-.note-title {
-  font-family: 'Fraunces', serif;
-  font-style: regular;
-  font-weight: 400;
-  font-variation-settings: 'opsz' 36;
-  font-size: clamp(1.05rem, 2vw, 1.5rem);
-  line-height: 1.2;
-  color: var(--ink);
-  position: relative;
-  transition: color 0.2s ease;
+.note-row:hover {
+  background: rgba(138, 92, 60, 0.035);
+  box-shadow: inset 0 0 0 1px rgba(138, 92, 60, 0.35);
 }
 
-/* Underline draws from left — the only hover animation */
-.note-title::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+/* Zero-padded serial number */
+.note-num {
+  flex-shrink: 0;
+  font-size: 0.5rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  padding-top: 0.32rem;
+  font-variant-numeric: tabular-nums;
+  width: 1.4rem;
+}
+
+.note-row-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+/* Fraunces at reading scale — opsz:36 */
+.note-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 36;
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1.2;
+  color: var(--ink);
+  transition: color 0.2s ease;
 }
 
 .note-row:hover .note-title {
   color: var(--accent);
 }
 
-.note-row:hover .note-title::after {
-  transform: scaleX(1);
+/* Lora italic for excerpt — signals this is prose, not UI */
+.note-excerpt {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+}
+
+.notes-empty {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--rule);
 }
 
 .note-date {
   flex-shrink: 0;
-  font-size: 0.53rem;
+  margin-left: auto;
+  font-size: 0.5rem;
   letter-spacing: 0.1em;
   color: var(--ink-dim);
   white-space: nowrap;
+  padding-top: 0.32rem;
+}
+
+/* ─────────────────────────────────────────────────────
+   PLAYGROUND SECTION
+   Showcase grid: each project is a card with presence.
+   Designed for apps, games, tools — things you open,
+   not things you read.
+───────────────────────────────────────────────────── */
+.playground {
+  padding: 5rem 0 6rem;
+  border-top: 1px solid var(--rule);
+}
+
+.playground-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* 2-column grid — cards have physical presence */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  border: 1px solid var(--rule);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.75rem;
+  color: inherit;
+  background: transparent;
+  border: none;
+  /* Scroll reveal — opacity only, transform reserved for hover */
+  opacity: 0;
+  transition: opacity 0.45s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+
+.project-card.visible {
+  opacity: 1;
+}
+
+.project-card:hover {
+  background: rgba(138, 92, 60, 0.035);
+  box-shadow: inset 0 0 0 1px rgba(138, 92, 60, 0.35);
+}
+
+/* Type badge — sits at the top, labels what this is */
+.project-tag {
+  align-self: flex-start;
+  font-size: 0.48rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(138, 92, 60, 0.3);
+  padding: 0.65em 0.65em;
+  border-radius: 2px;
+}
+
+/* Project name — display weight, the visual anchor of the card */
+.project-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 72;
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1.15;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--accent);
+}
+
+.project-desc {
+  font-family: 'Lora', serif;
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+}
+
+/* CTA anchors to the bottom of every card regardless of content height */
+.project-cta {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-size: 0.52rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: gap 0.22s ease;
+}
+
+.project-cta .arr {
+  display: inline-block;
+  transition: transform 0.22s ease;
+}
+
+.project-card:hover .project-cta {
+  gap: 0.75rem;
+}
+
+.project-card:hover .project-cta .arr {
+  transform: translateX(3px);
+}
+
+/* ─────────────────────────────────────────────────────
+   PROJECT SHOWCASE PAGE
+   Product launch feel: dominant title, explicit CTA,
+   case study body below. Not a blog post.
+───────────────────────────────────────────────────── */
+.project-showcase {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+/* Back link + type badge — same row, opposite ends */
+.project-showcase-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.project-back {
+  font-size: 0.52rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  transition: color 0.2s ease;
+}
+
+.project-back:hover {
+  color: var(--ink);
+}
+
+/* Type badge — mirrors the card badge from the index */
+.project-hero-tag {
+  font-size: 0.48rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(138, 92, 60, 0.3);
+  padding: 0.22em 0.65em;
+  border-radius: 2px;
+}
+
+/* Title at display scale — this is the visual anchor */
+.project-hero-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 72;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  animation: appear 0.7s ease forwards 0.15s;
+}
+
+/* Description as lead — prominent, readable, not metadata */
+.project-hero-desc {
+  font-family: 'Lora', serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--ink-mid);
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: appear 0.7s ease forwards 0.3s;
+}
+
+/* Solid CTA button — fills on hover, signals action not reading */
+.project-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(138, 92, 60, 0.5);
+  padding: 0.85em 1.75em;
+  transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+  opacity: 0;
+  animation: appear 0.6s ease forwards 0.45s;
+}
+
+.project-open-btn .arr {
+  display: inline-block;
+  transition: transform 0.22s ease;
+}
+
+.project-open-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.project-open-btn:hover .arr {
+  transform: translateX(3px);
+}
+
+/* Case study body — the "what / how / why" below the fold */
+.project-body {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink-mid);
+}
+
+.project-body h1,
+.project-body h2,
+.project-body h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 72;
+  color: var(--ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.project-body h1 { font-size: clamp(2rem, 4vw, 3rem); }
+.project-body h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+.project-body h3 { font-size: clamp(1.1rem, 2vw, 1.5rem); }
+
+.project-body p { margin-bottom: 1.5rem; }
+
+.project-body a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(138, 92, 60, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.project-body a:hover {
+  border-color: var(--accent);
 }
 
 /* ─────────────────────────────────────────────────────
@@ -374,7 +654,14 @@ body::after {
   }
 
   .note-row {
-    flex-direction: column;
-    gap: 0.3rem;
+    gap: 1rem;
+  }
+
+  .note-num {
+    display: none;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,19 @@
+<section class="playground" id="playground">
+  <div class="wrap">
+    <div class="playground-header">
+      <span class="section-label">Playground</span>
+      <span class="section-label">{% assign published_projects = site.playground | where: "published", true %}{% if published_projects.size < 10 %}0{% endif %}{{ published_projects.size }} projects</span>
+    </div>
+    {% assign published_projects = site.playground | where: "published", true %}
+    <div class="project-grid">
+      {% for project in published_projects %}
+      <a href="{{ project.url }}" class="project-card">
+        <span class="project-tag">{{ project.tag | default: "project" }}</span>
+        <span class="project-title">{{ project.title }}</span>
+        {% if project.description %}<span class="project-desc">{{ project.description }}</span>{% endif %}
+        <span class="project-cta">Explore <span class="arr">→</span></span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
