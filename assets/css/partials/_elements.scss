@@ -441,17 +441,6 @@ body::after {
   color: var(--ink);
 }
 
-/* Type badge — mirrors the card badge from the index */
-.project-hero-tag {
-  font-size: 0.48rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border: 1px solid rgba(138, 92, 60, 0.3);
-  padding: 0.22em 0.65em;
-  border-radius: 2px;
-}
-
 /* Title at display scale — this is the visual anchor */
 .project-hero-title {
   font-family: 'Fraunces', serif;
